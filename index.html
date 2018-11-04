@@ -8,9 +8,13 @@
             margin:0;
             padding:0;
         }
-        .headline{
+        .headline,.annotation{
             text-align:center;
         }
+        .annotation{
+            clear:both;
+        }
+        /*为包裹图片和描述的div设置百分比的宽度和外边距*/
         .img{
             width:22%;
             float:left;
@@ -20,6 +24,7 @@
         .img:hover{
             border:1px solid #aaa;
         }
+        /*调整图片大小为合适*/
         .img-fixed{
             width:100%;
             height:200px;
@@ -29,6 +34,7 @@
             padding:20px;
             text-align:center;
         }
+        /*为不同大小屏幕设置不同的百分比*/
 @media only screen and (max-width:900px){
     .img{
         width:46%;
@@ -91,5 +97,6 @@
         </a>
         <div class="desc">Add a description of the image here</div>
     </div>
+    <h2 class="annotation">调整浏览器窗口大小查看效果</h2>
 </body>
 </html>
